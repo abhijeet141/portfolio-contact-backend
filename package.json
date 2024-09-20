@@ -2,9 +2,10 @@
   "name": "portfolio-contact-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
-    "start": "node index.ts"
+    "build": "npx tsc -b",
+    "start": "npm run build && node dist/index.js"
   },
   "keywords": [],
   "author": "",

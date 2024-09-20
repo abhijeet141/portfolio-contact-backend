@@ -3,8 +3,11 @@ import bodyParser from 'body-parser';
 import { Request, Response} from 'express'
 import validation from './middleware/validation';
 import { Message } from './database/database';
+import cors from 'cors'; 
 
 const app = express();
+
+app.use(cors());
 
 app.use(bodyParser.json());
 
